@@ -1,0 +1,9 @@
+Sample demonstrating exposing a SSL based endpoint using Spring Boot
+
+[source, bash]
+----
+keytool -genkey -alias tomcat -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650 \
+-dname "CN=mysite.com, OU=anorg, O=some, L=Beaverton, ST=OR, C=US" \
+-keypass somepass \
+-storepass somepass
+----
